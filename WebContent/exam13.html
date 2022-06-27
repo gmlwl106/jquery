@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -13,6 +13,17 @@
 
 </body>
 
+<script type="text/javascript">
+$("#btn").on("click", function() {
+	//$("#display").html("<font color='red'>아아아아</font>")
+	$("#display").text("아아아");
+	$("#display").css("color", "red");
+});
+
+$("#display").on("click", function() {
+	console.log("아아아아");
+});
+</script>
 
 
 </html>
