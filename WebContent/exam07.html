@@ -2,15 +2,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+
 
 <title>Insert title here</title>
 </head>
 
 <body>
 	<p id="p1"> abcdefghijklmn </p>
-	<p id="p2"> 학교종이 땡땡땡<br /> abcdefg </p>
+	<p id="p2"> <strong>학교종이 땡땡땡<br /> abcdefg</strong> </p>
 </body>
-	
+
+<script type="text/javascript">
+$("#p1").html("<strong>가나다라</strong>");
+
+var str = $("#p2").html();
+console.log(str);
+//text는 글씨만 가져오지만 html은 해당하는 태그 안 html 태그까지 가져옴
+</script>
 
 </html>
