@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -16,7 +16,18 @@
 	</ul>
 
 </body>
+<script type="text/javascript">
+$("li").on("click", function() {
+	var $this = $(this).text(); //$this는 변수명 *$(this)중요*
+	console.log($this);
+});
 
+$("#second").on("click", function(){
+	$(this).text("변경된 문구");
+});
+
+
+</script>
 
 
 </html>
